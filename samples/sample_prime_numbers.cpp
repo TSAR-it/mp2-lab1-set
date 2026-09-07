@@ -56,7 +56,9 @@ int main()
 #else
 
 #include "tset.h"
-
+using std::cout;
+using std::endl;
+using std::cin;
 int main()
 {
   int n, m, k, count;
@@ -86,7 +88,7 @@ int main()
     if (s.IsMember(m))
     {
       count++;
-      cout << setw(3) << m << " ";
+      cout << std::setw(3) << m << " ";
       if (k++ % 10 == 0)
         cout << endl;
     }
